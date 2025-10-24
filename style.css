@@ -132,3 +132,69 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+/* Mobile Navbar */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Default nav link style */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  /* Show hamburger icon */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Hide nav links by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 0;
+  }
+
+  /* Show when active */
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+}
+
+/* Optional: animation for menu icon when active */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
