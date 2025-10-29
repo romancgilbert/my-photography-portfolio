@@ -11,23 +11,13 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 // --------------------
 // Helper placeholder images (unsplash) — replace with your own
 // --------------------
-const img = (id:number) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1600&q=80`;
-const PLACEHOLDERS = [
-  "1519681393784-d120267933ba", // portrait
-  "1494790108377-be9c29b29330", // portrait
-  "1520974704741-2b70b3d1d65e", // street
-  "1516637090014-cb1ab0d08fc7", // landscape
-  "1500530855697-b586d89ba3ee",
-  "1501785888041-af3ef285b470",
-  "1499084732479-de2c02d45fc4",
-  "1487412912498-0447578fcca8",
-  "1497206365907-f5e630693df0",
-  "1500534314209-a25ddb2bd429",
-  "1470071459604-3b5ec3a7fe05",
-  "1452587925148-ce544e77e70d",
-  "1519681393784-d120267933ba",
-  "1499084732479-de2c02d45fc4",
-  "1500534314209-a25ddb2bd429",
+// Direct Google Drive photo URLs
+const DRIVE_IMAGES = [
+  "https://drive.google.com/uc?export=view&id=1O_HVbDwXI8rJNLP6UN2h06Ciiu144xdq", // portrait
+  "https://drive.google.com/uc?export=view&id=1C-mFTH6qGc4GJZoLTUId_U9ldcOdht0G", // portrait
+  "https://drive.google.com/uc?export=view&id=15iUxN1r4MIGz2161eQ8mmIDembVmPk53", // portrait
+  "https://drive.google.com/uc?export=view&id=1ZWc4DFT2AT64ENHm5MO90JYaHgV6Trs8", // portrait
+  // add as many as you want
 ];
 
 // --------------------
